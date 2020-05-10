@@ -1,20 +1,17 @@
-print('Hello Rabotnik!!')
+print('privet')
 
 n_one = ""
 n_two = ""
+# Multiplication and division
+print(f"Результат умножения = {n_one * n_two}")
+try:
+    print(f"Результат деления = {n_one / n_two}")
+except ZeroDivisionError:
+    print("На 0 делить нельзя, Умник")
 
-while n_one == "" or n_two == "":
-    try:
-        n_one = int(input("Введите первое положительное число: "))
-        if n_one < 0:
-            raise ValueError("ValueError exception thrown")
-
-        n_two = int(input("Введите второе положительное число: "))
-        if n_two < 0:
-            raise ValueError("ValueError exception thrown")
-
-        # Addition and subtraction
-        print(f"Результат сложения = {n_one+n_two}")
-        print(f"Результат вычитания = {n_one-n_two}") 
-
+except ValueError:
+    number_one = ""
+number_two = ""
+print("Ничего кроме положительных чисел!")
+print("Давай все по новой!")
 
